@@ -1,0 +1,22 @@
+O que significa encapsulamento e por que ele é importante no desenvolvimento de sistemas?
+R: Encapsulamento é como colocar os dados de uma classe dentro de uma “caixa” protegida, onde só é possível mexer neles através de métodos específicos, como getters e setters.
+
+Isso é importante porque ajuda a proteger as informações, evita que algo seja alterado de forma errada, facilita a manutenção do código e deixa o sistema mais organizado e seguro.
+#🏄‍♂️
+
+Sobre Programação Orientada a Objetos (POO), assinale a alternativa correta:
+
+	a) Atributos são as ações que os objetos podem executar.
+
+	b) Métodos representam as características de um objeto.
+
+ 🟢		c) Encapsulamento significa proteger os dados e controlar o acesso a eles.
+	
+	d) Herança é quando um objeto tem vários métodos com o mesmo nome.
+
+
+Explique com suas palavras a diferença entre atributos e métodos em uma classe.
+R: Os atributos descrevem o objeto, enquanto os métodos fazem o objeto agir.
+É como uma pessoa: ela tem características (nome, idade, altura) e ações (falar, correr, dormir).
+
+# GUSTAVO JOAQUIM FABIAM
