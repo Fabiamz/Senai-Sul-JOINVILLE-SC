@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    </style>
+        <style>
+            body {
+                font-family : Arial, sans-serif;
+                background-color: #ffffff;
+            }
+            .container {
+                width: 400px;
+                margin: 50px auto;
+                border: 1px solid #000000;
+                padding: 20px;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+
+            }
+            h1 {
+                text-align: center;
+                color: #000000;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            label{
+                margin-top: 10px;
+                color : #131212;
+            }
+            input, textarea{
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #000000;
+                border-radius: 4px;
+            }
+            textarea {
+                resize: vertical;
+            }
+            button {
+                margin-top: 15px;
+                padding: 10px;
+                background-color: #000000;
+                color: #ffffff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #666666;
+            }
+    </style>
+</head>
+<body>
+</form>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+        <form action="/enviar" method="POST">
+            <label>Nome:</label>
+            <input type="text" name="nome">
+
+            <label>Email:</label>
+            <input type/"text" name="email">
+
+            <label>Mensagem:</label>
+            <textarea name="mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+</body>
+</html>
