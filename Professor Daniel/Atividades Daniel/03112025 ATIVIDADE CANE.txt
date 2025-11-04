@@ -1,0 +1,36 @@
+03/11/2025 ATIVIDADE CANE 
+BANCO DE DADOS
+
+1. SELECT titulo_portugues,
+    CASE
+        WHEN ano_lancamento BETWEEN 1980 AND 1989 THEN 'Anos 80'
+        WHEN ano_lancamento BETWEEN 1990 AND 1999 THEN 'Anos 90'
+        WHEN ano_lancamento BETWEEN 2000 AND 2009 THEN 'Anos 2000'
+        WHEN ano_lancamento BETWEEN 2010 AND 2019 THEN 'Anos 2010'
+        WHEN ano_lancamento >= 2020 THEN 'Anos 2020'
+        ELSE 'Anterior a 1980'
+    END AS decada
+FROM filme;
+
+2. SELECT 
+    CONCAT(titulo_portugues, ' (', ano_lancamento, ')') AS filme_com_ano
+FROM filme
+ORDER BY ano_lancamento;
+
+3.SELECT 
+	SUBSTRING(nome, 1, INSTR(nome, ' ') -1) AS primeiro_nome
+FROM ator;
+
+4. SELECT
+	f.titulo_portugues AS titulo,
+	g.nome AS gênero
+FROM filme AS f
+INNER JOIN filme genero AS fg ON f.id = fg.id_filme
+INNER JOIN genero AS g ON g.id = fg.id_genero;
+
+5. SELECT
+	f.titulo_portugues AS titulo,
+	COALESCE(g.nome, 'S/G') AS gênero
+FROM filme AS f
+LEFT JOIN filme gênero AS fg ON f.id = fg.id_filme
+LEFT JOIN gênero AS g ON g.id = fg.id_genero;
